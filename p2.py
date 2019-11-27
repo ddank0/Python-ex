@@ -14,5 +14,7 @@ for i in x:
         zet.write(i.upper())
     elif i.isspace() == True:
         pass
+    elif i.isalpha() == False:
+        zet.write('%')
 x.close()
 zet.close()
