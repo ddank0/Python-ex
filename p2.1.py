@@ -8,7 +8,6 @@ def removes (lista):
 
 def cond (x):
     aux = []
-    cont =0 
     for i in x:
         y = x.count(i)
         y = str(y)
