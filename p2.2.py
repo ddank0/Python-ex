@@ -32,4 +32,4 @@ y = matrix(mt)
 
 print('')
 print('Matriz transposta:')
-trans = write(y,tax,tay)
+trans = write(y,tax,tay),
