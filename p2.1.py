@@ -1,14 +1,21 @@
+def removes (lista):
+    l = []
+    for i in lista:
+        if i not in l:
+            l.append(i)
+    
+    return l
+
 def cond (x):
     aux = []
-    aux2 = []
     cont =0 
     for i in x:
         y = x.count(i)
         y = str(y)
         g= str(i)
         aux.append(g + '^' + y)
-    
-    print(aux)
+    lit = removes(aux)
+    print(f'''. {lit}''')
     return aux
 
 lista_int = []
@@ -28,6 +35,6 @@ for i in range(0, len(lista_int)):
             lista_int[i] = lista_int[j]
             lista_int[j] = cont
 
-print(lista_int)
+print(f'''\n. {lista_int} \n''')
 
 z = cond(lista_int)
