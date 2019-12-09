@@ -1,3 +1,10 @@
+def write (x,y,z):
+    for i in range(0,y):
+        for j in range(0,z):
+            print(f'[{x[i][j]:^5}]',end='')
+        print()
+    return x
+
 def matrix(x):
     aux = []
     for j in range(len(x[0])):
@@ -18,17 +25,11 @@ for i in range(0,tax):
 
 print('-='*25)
 print('Matriz original:')
-for i in range(0,tax):
-    for j in range(0,tay):
-        print(f'[{mt[i][j]:^5}]',end='')
-    print()
+orig = write(mt,tax,tay)
 
 
 y = matrix(mt)
 
 print('')
-print('Matriz tranposta:')
-for i in range(0,tax):
-    for j in range(0,tay):
-        print(f'[{y[i][j]:^5}]',end='')
-    print()
+print('Matriz transposta:')
+trans = write(y,tax,tay)
