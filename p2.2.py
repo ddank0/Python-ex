@@ -16,6 +16,8 @@ for i in range(0,tax):
     for j in range(0,tay):
         mt[i].append(int(input('elem:')))
 
+print('-='*25)
+print('Matriz original:')
 for i in range(0,tax):
     for j in range(0,tay):
         print(f'[{mt[i][j]:^5}]',end='')
@@ -25,7 +27,7 @@ for i in range(0,tax):
 y = matrix(mt)
 
 print('')
-
+print('Matriz tranposta:')
 for i in range(0,tax):
     for j in range(0,tay):
         print(f'[{y[i][j]:^5}]',end='')
