@@ -3,10 +3,9 @@ cont_f = 0
 soma_m = 0
 soma_f = 0
 m_salario = 0
-nome = input('Nome:')
 
-while nome != 'fim':
-    idade = int(input('Idade:'))
+idade = int(input('Idade:'))
+while idade > 0:
     sexo = input('Sexo:')
     salario = float(input('Salário:'))
 
@@ -14,15 +13,15 @@ while nome != 'fim':
         if idade < 30:
             m_salario = salario
 
-    if sexo == 'f':
+    if sexo.upper() == 'F':
         cont_f = cont_f + 1
         soma_f = soma_f + salario
 
-    if sexo == 'm':
+    if sexo.upper() == 'M':
         cont_m = cont_m + 1
         soma_m = soma_m + salario
 
-    nome = input('Nome:')
+    idade = int(input('Idade:'))
 
 if cont_m != 0:
     print('Média salarial masculina:',(soma_m/cont_m))

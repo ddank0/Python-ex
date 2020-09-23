@@ -1,0 +1,15 @@
+INICIO
+    n1 ← LER primeiro termo
+    n2 ← LER razão
+    term ← LER quantidade de termos
+    soma ← n1
+    IMPRIMIR(n1)
+    PARA i ← 0 ATE term FAÇA:
+        SE soma = n1 ENTÃO:
+            soma ← n1 + n2
+            IMPRIMIR(soma)
+        SE NÃO:
+            soma = soma + n2
+            IMPRIMIR(soma)
+FIM
+

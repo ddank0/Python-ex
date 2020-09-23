@@ -1,0 +1,18 @@
+INICIO
+    x = 1
+    LER numero
+    fat = numero - 1
+    SE numero >= 0 ENTÃO:
+        PARA i=1 ATÉ numero FAÇA:
+            SE numero > 0 ENTÃO:
+                x = numero * fat
+                fat = fat - 1
+                numero = numero * (-1)
+            SE NÃO:
+                x = x * fat
+                fat = fat - 1
+        IMPRIMIR(x)
+    SE NÃO:
+        IMPRIMIR('Error')
+FIM
+

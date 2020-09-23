@@ -1,0 +1,18 @@
+ler 5 valores calcular a media de numeros maiores que 3
+
+
+Inicio
+    soma = 0
+    cont = 0
+    Para i=1 ate 5 faça:
+        ler x
+        se x > 3 então:
+            soma = soma + x
+            cont = cont+1
+    se cont == 0 então:
+        imprimir 'errro'
+
+    se não: 
+        media = soma/ cont
+        imprimir media
+Fim
