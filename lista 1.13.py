@@ -7,5 +7,5 @@ if l1 <= 0 or l2 <= 0 or l3 <=0:
     print('dados invalidos')
 else:
     p = (l1+l2+l3)/2
-    a =(p*(p-l1)*(p-l2)*(p-l3))**(1/2)
+    a = (p*(p-l1)*(p-l2)*(p-l3))**(1/2)
     print('área:',a)

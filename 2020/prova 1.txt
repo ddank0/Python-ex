@@ -1,0 +1,34 @@
+peso = LER peso
+maior_p = 0
+menor_p = 1000000000
+maior_id = 0
+menor_id= 0
+cont_n = 0
+cont_g = 0
+cont_o = 0
+ENQUANTO peso > 0 FAÇA:
+    raça = LER raça 
+    ide = LER identificação
+    SE peso > maior_p ENTÃO:
+        maior_p = peso
+        maior_id = ide
+    SE peso < menor_p ENTÃO:
+        menor_p = peso
+        menor_id = ide
+    SE raça == 'N' E peso > 300 ENTÃO:
+        cont_n += 1
+    SE raça == 'G' E peso > 300 ENTÃO:
+        cont_g += 1
+    SE raça == 'O' E peso > 300 ENTÃO:
+        cont_o += 1 
+    peso = LER peso
+IMPRIMIR('O boi de maior peso pussui:',maior_p,'Kg identificação:',maior_id)
+IMPRIMIR('O boi de menor peso pussui:',menor_p,'Kg identificação:',menor_id)
+IMPRIMIR('Bois nelore com mais de 300kg:',cont_n)
+IMPRIMIR('Bois gir com mais de 300kg:',cont_g)
+IMPRIMIR('Outros bois com mais de 300kg:',cont_o)
+
+
+
+    
+
